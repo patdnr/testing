@@ -38,12 +38,12 @@ jobs:
         --prCommentSaveOld "false" \
         --timeout "5" \
         --overridesJsonFile ".github/workflows/lighthouse-config.json" \
-        --urls "https://en.wikipedia.org/wiki/Maritime_pilot" \
+        --urls "https://en.wikipedia.org/wiki/Harbor" \
         --outputDirectory /tmp/lighthouse-artifacts
     - name: Handle Lighthouse Check results
       run: |
         lighthouse-check-status --outputDirectory /tmp/lighthouse-artifacts \
-        --minAccessibilityScore 80 \
-        --minBestPracticesScore 80 \
-        --minPerformanceScore 80 \
-        --minSeoScore 50
+        --minAccessibilityScore 40 \
+        --minBestPracticesScore 40 \
+        --minPerformanceScore 40 \
+        --minSeoScore 40
