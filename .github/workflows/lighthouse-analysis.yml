@@ -38,12 +38,12 @@ jobs:
         --prCommentSaveOld "false" \
         --timeout "5" \
         --overridesJsonFile ".github/workflows/lighthouse-config.json" \
-        --urls "https://en.wikipedia.org/wiki/The_Lighthouse_(2019_film)" \
+        --urls "https://en.wikipedia.org/wiki/Maritime_pilot" \
         --outputDirectory /tmp/lighthouse-artifacts
     - name: Handle Lighthouse Check results
       run: |
         lighthouse-check-status --outputDirectory /tmp/lighthouse-artifacts \
-        --minAccessibilityScore 40 \
-        --minBestPracticesScore 40 \
-        --minPerformanceScore 40 \
-        --minSeoScore 40
+        --minAccessibilityScore 80 \
+        --minBestPracticesScore 80 \
+        --minPerformanceScore 80 \
+        --minSeoScore 50
