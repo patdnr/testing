@@ -3,5 +3,10 @@
       "settings": {
         "onlyCategories": ["performance", "accessibility", "best-practices", "seo"]
       }
+    },
+    "options": {
+      "chromeFlags": [
+        ["--disable-dev-shm-usage", "--no-sandbox"]
+      ]
     }
 }
