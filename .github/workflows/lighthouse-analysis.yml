@@ -38,7 +38,7 @@ jobs:
         --prCommentSaveOld "false" \
         --timeout "5" \
         --overridesJsonFile ".github/workflows/lighthouse-config.json" \
-        --urls "https://en.wikipedia.org/wiki/Lighthouse" \
+        --urls "https://en.wikipedia.org/wiki/The_Lighthouse_(2019_film)" \
         --outputDirectory /tmp/lighthouse-artifacts
     - name: Handle Lighthouse Check results
       run: |
