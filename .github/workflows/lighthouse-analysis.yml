@@ -37,7 +37,7 @@ jobs:
         --prCommentUrl "https://api.github.com/repos/patdnr/testing/pulls/$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')/reviews" \
         --timeout "5" \
         --overridesJsonFile ".github/workflows/lighthouse-config.json" \
-        --urls "https://en.wikipedia.org/wiki/Ancient_Egypt" \
+        --urls "https://www.foo.software" \
         --outputDirectory /tmp/lighthouse-artifacts
     - name: Handle Lighthouse Check results
       run: |
