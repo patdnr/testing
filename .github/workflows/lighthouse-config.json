@@ -3,10 +3,5 @@
       "settings": {
         "onlyCategories": ["performance", "accessibility", "best-practices", "seo"]
       }
-    },
-    "options": {
-      "chromeFlags": [
-        ["--no-sandbox", "--ignore-certificate-errors"]
-      ]
     }
 }
